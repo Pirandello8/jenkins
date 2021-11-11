@@ -1,1 +1,25 @@
-ciao
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Sto compilando il progetto'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Sto testando il progetto'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                echo 'Sto deployando il progetto'
+            }
+        }
+    }
+    
+  
+}
